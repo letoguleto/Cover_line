@@ -40,7 +40,6 @@ void sort(std::vector<int*>* vec) {
         }
     }
 }
-
 std::vector<int>* pointSearch(std::vector<int*> vec){
     std::vector<int>* pointVec = new std::vector<int>;
     while(vec.size() != 0){
