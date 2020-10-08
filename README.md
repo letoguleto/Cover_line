@@ -41,9 +41,8 @@ void sort(std::vector<int*>* vec) {
     }
 }
 
-std::vector<int>* pointSearch(std::vector<int*> vec){//возвращение указателя на верктор точек
+std::vector<int>* pointSearch(std::vector<int*> vec){
     std::vector<int>* pointVec = new std::vector<int>;
-
     while(vec.size() != 0){
         int* currentPoint = vec[0];
         pointVec->push_back(currentPoint[1]);
