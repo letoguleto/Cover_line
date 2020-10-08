@@ -59,29 +59,21 @@ int main()
     int countLines;
     std::vector<int*>storage = {};
     scanf("%d", &countLines);
-
     for (int i = 0; i < countLines; i++) {
         int* p = new int;
         scanf("%d %d",&p[0],&p[1]);
         storage.push_back(p);
-        //printf("%d\n",*(storage[i]));
     }
     sort(&storage);
-
     std::vector<int>* pointStorage = pointSearch(storage);
-    ///////////////////////////////
     printf("%d\n",pointStorage->size());
     for(auto & i : *pointStorage){
         printf("%d ",i);
     }
-
-
     for(int i =0;i < storage.size();i++){
         delete(storage.at(i));
     }
     delete pointStorage;
-
-
     return 0;
 }
 </code>
