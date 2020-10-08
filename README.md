@@ -16,10 +16,8 @@
 <b>simple output:</b>
 2
 3 6
-</div>
 </pre>
   </code>
-
 <p><b>Решение(Solution)<p><b>
 <pre>
   <code>
