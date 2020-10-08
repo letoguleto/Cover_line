@@ -35,8 +35,7 @@ void sort(std::vector<int*>* vec) {
             if (vec->at(i)[1] > vec->at(j)[1]){
                 temp = vec->at(j);
                 vec->at(j) = vec->at(i);
-                vec->at(i) = temp;
-                //printf("its f %d its sc %d\n",temp[0],temp[1]);
+                vec->at(i) = temp; 
             }
         }
     }
@@ -54,7 +53,6 @@ std::vector<int>* pointSearch(std::vector<int*> vec){//возвращение у
             else break;
         }
     }
-    //printf("currentPoint[0] %d currentPoint[1] %d\n",currentPoint[0],currentPoint[1]);
     return pointVec;
 }
 int main()
